@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdGVcVGVzdGUwMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/TwTodo/Views/Todo/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/TwTodo/Views/Todo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9kb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

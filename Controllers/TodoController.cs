@@ -21,14 +21,30 @@ namespace TwTodo.Controllers
             public TodoController(TWTodoContext context) {
                 _context = context;
             }
-            
+         [HttpGet]   
         public IActionResult Index()
         {
-
-            var todo = _context.Todos.First();
-            return View(todo);
+            ViewData["Title"] = "Lista de tarefas";
+            var todos = _context.Todos.ToList();
+            return View(todos);
         }
 
-       
+       [HttpGet("Create")]
+        public IActionResult Create()
+        {
+            ViewData["Title"] = "Nova Tarefa";
+            return View("Form");
+        }
+
+        [HttpPost("Create")]
+        public IActionResult Create(Todo todo)
+        {
+           
+                _context.Todos.Add(todo);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            
+            
+}
     }
 }
